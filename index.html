@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Селектори</title>
+
+  <!-- Подключение стилей -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<h1>Демонстрація CSS-селекторів</h1>
+
+<!-- 1. Тег -->
+<p>Селектор: p — вага 1</p>
+
+<!-- 2. Клас -->
+<div class="box">Селектор: .box — вага 10</div>
+
+<!-- 3. ID -->
+<div id="unique">Селектор: #unique — вага 100</div>
+
+<!-- 4. Атрибут -->
+<input type="text" value="Селектор: input[type='text'] — вага 10">
+
+<br><br>
+
+<!-- 5. Вкладений -->
+<div>
+  <span>Селектор: div span — вага 2</span>
+</div>
+
+<br>
+
+<!-- 6. Дочірній -->
+<div>
+  <p>Селектор: div > p — вага 2</p>
+</div>
+
+<br>
+
+<!-- 7. Послідовність -->
+<p class="text">Селектор: p.text — вага 11</p>
+
+<br>
+
+<!-- 8. Клас + атрибут -->
+<input class="field" type="email" value="Селектор: .field[type='email'] — вага 20">
+
+<br><br>
+
+<!-- 9. ID + тег -->
+<div id="block">
+  <p>Селектор: #block p — вага 101</p>
+</div>
+
+<br>
+
+<!-- 10. Вкладені класи -->
+<div class="wrap">
+  <div class="inner">
+    Селектор: .wrap .inner — вага 20
+  </div>
+</div>
+
+</body>
+</html>
